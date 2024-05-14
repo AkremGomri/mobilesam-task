@@ -1,27 +1,49 @@
 # Internship Take Home Assignment - Software Engineer
 
-This assignment is designed to assess your software engineering skills in the context of integrating and deploying a machine learning model. Though the task involves a machine learning model, the primary focus is on developing and deploying the software application.
+This repository is an assignment which is designed to assess my software engineering skills in the context of an internship application to SpaceSence.
+
+I have forked the repository, and made the changes to answear the quesion.
 
 ## How to Run the Code
 
-1. **Create a Virtual Environment and Activate It**
+1. **Clone the project locally and move to the project**
 
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
+```bash
+  git clone https://github.com/AkremGomri/mobilesam-task.git
+  cd mobilesam-task
+```
 
-2. **Install the Requirements**
+2. **Create a Virtual Environment and Activate It**
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+python -m venv venv
+venv\Scripts\activate  # On Linux or MacOs use `source venv/bin/activate`
+```
 
-3. **Run the Code**
+3. **Install the Requirements**
 
-    ```bash
-    python main.py
-    ```
+```bash
+pip install -r requirements.txt
+```
+
+4. **Run the Server**
+```bash
+uvicorn main:app --reload # --reload is an option
+```
+
+5. **Test the functionality**
+   
+At this point, you are free to choose whichever tool you prefer to interact with the APIs, however, I recommend using Swagger UI since it is already integrated with FastAPI.
+
+***Swagger:***
+
+    1. Open the URL where the FastAPI server is running, which is displayed in the command line interface (CLI) once you run the server.
+    2. Add /docs to the URL to open the Swagger UI interface.
+    3. In Swagger UI, you will see a POST request with the endpoint /segment-image/.
+    4. You can try out this endpoint by uploading any image you like and observe the result.
+Enjoy exploring the functionality of the API with Swagger UI!
+
+Note: Processing the image might take up to a minute, so be patient.
 
 ## Task Overview
 
@@ -46,8 +68,10 @@ MobileSam is a machine learning model specialized in image segmentation on CPUs.
 
 - **[Bonus]** Docker Familiarity: Containerize your service using Docker.
 
-## Submission
 
-- Submit your code via a GitHub repository link.
-- Include a README file with detailed setup and usage instructions.
-- Provide any necessary scripts or files for testing the API.
+## Authors
+
+- **Issuing Company**: [SpaceSense](https://github.com/rohan-spacesense)
+
+- **Contributor**: [Akrem Gomri](https://github.com/AkremGomri/)
+
