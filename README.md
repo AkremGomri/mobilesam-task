@@ -6,6 +6,8 @@ I have forked the repository, and made the changes to answear the quesion.
 
 ## How to Run the Code
 
+### Without Using Docker (Recommanded)
+
 1. **Clone the project locally and move to the project**
 
 ```bash
@@ -37,13 +39,30 @@ At this point, you are free to choose whichever tool you prefer to interact with
 
 ***Swagger:***
 
-    1. Open the URL where the FastAPI server is running, which is displayed in the command line interface (CLI) once you run the server.
-    2. Add /docs to the URL to open the Swagger UI interface.
-    3. In Swagger UI, you will see a POST request with the endpoint /segment-image/.
-    4. You can try out this endpoint by uploading any image you like and observe the result.
+Open a web browser and navigate to http://localhost:8000/docs to access the Swagger UI interface and interact with the FastAPI server running inside the Docker container.
 Enjoy exploring the functionality of the API with Swagger UI!
 
 Note: Processing the image might take up to a minute, so be patient.
+
+### Using Docker (Not tested)
+
+1. **Clone the project locally and move to the project directory:**
+    ```bash
+    git clone https://github.com/AkremGomri/mobilesam-task.git
+    cd mobilesam-task
+    ```
+
+2. **Build the Docker image:**
+    ```bash
+    docker build -t mobilesam-task .
+    ```
+
+3. **Run the Docker container:**
+    ```bash
+    docker run -d -p 8000:8000 mobilesam-task
+    ```
+
+4. **Open a web browser and navigate to `http://localhost:8000/docs` to access the Swagger UI interface and interact with the FastAPI server running inside the Docker container.**
 
 ## Task Overview
 
