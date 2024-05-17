@@ -1,6 +1,6 @@
-# Internship Take Home Assignment - Software Engineer
+# Assignment - Software Engineer
 
-This repository is an assignment which is designed to assess my software engineering skills in the context of an internship application to SpaceSence.
+This repository is an assignment which is designed to assess my software engineering skills.
 
 I have forked the repository, and made the changes to answear the quesion.
 
